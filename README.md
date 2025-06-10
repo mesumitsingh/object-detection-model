@@ -7,28 +7,41 @@ When it comes to object detection, popular detection frameworks are
  * SSD
  * Faster R-CNN
  
- Support for running YOLO/DarkNet has been added to OpenCV dnn module recently. 
+Support for running YOLO/DarkNet has been added to OpenCV dnn module recently. 
  
- ## Dependencies
-  * opencv
-  * numpy
-  
+## Dependencies
+ * opencv
+ * numpy
+ 
 `pip install numpy opencv-python`
 
- ## YOLO (You Only Look Once)
+## YOLO (You Only Look Once)
  
- `$ wget https://pjreddie.com/media/files/yolov3.weights`
+`$ wget https://pjreddie.com/media/files/yolov3.weights`
  
- Provided all the files are in the current directory, below command will apply object detection on the input image `dog.jpg`.
+Provided all the files are in the current directory, below command will apply object detection on the input image `dog.jpg`.
  
- `$ python yolo_opencv.py --image dog.jpg --config yolov3.cfg --weights yolov3.weights --classes yolov3.txt`
+`$ python yolo_opencv.py --image dog.jpg --config yolov3.cfg --weights yolov3.weights --classes yolov3.txt`
  
  
- **Command format** 
+**Command format** 
  
- _$ python yolo_opencv.py --image /path/to/input/image --config /path/to/config/file --weights /path/to/weights/file --classes /path/to/classes/file_
+_$ python yolo_opencv.py --image /path/to/input/image --config /path/to/config/file --weights /path/to/weights/file --classes /path/to/classes/file_
  
 
- ### sample output :
- ![](object-detection.jpg)
- 
+### Sample outputs:
+
+#### Detected Objects Example
+![](object-detection.jpg)
+
+#### YOLO Network Architecture
+![](Architecture.png)
+
+#### Input Image (dog.jpg)
+![](dog.jpg)
+
+#### Object Detection using YOLO
+![](Object-Detection-using-YOLO.png)
+
+#### Detection Flowchart
+![](Flowchart.png)
