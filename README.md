@@ -15,8 +15,6 @@ When it comes to object detection, popular detection frameworks are
   
 `pip install numpy opencv-python`
 
-**Note: Compatability with Python 2.x is not officially tested.**
-
  ## YOLO (You Only Look Once)
  
  `$ wget https://pjreddie.com/media/files/yolov3.weights`
